@@ -35,7 +35,13 @@
 .block p
 {
   margin: 0.25rem 1rem;
-  grid-column: 1/4;
+  grid-column: 1/5;
+}
+
+.block picture
+{
+  margin: 0.25rem 1rem;
+  grid-column: 5;
 }
 
 .block ul
