@@ -40,8 +40,13 @@
 
 .block ul
 {
-  margin: 0rem 0.5rem 1rem 0.5rem;
+  margin: 0rem 0rem 1rem 0rem;
   grid-column: 1/6;
+}
+
+li
+{
+    margin: 0.5rem 0rem;
 }
 
 .section
