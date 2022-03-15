@@ -82,6 +82,11 @@ a:hover, a:active
   grid-column: 1/6;
 }
 
+#goBack
+{
+  color: blue;
+}
+
 .header
 {
   text-align: center;
