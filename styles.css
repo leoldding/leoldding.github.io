@@ -127,6 +127,11 @@ footer
   {
     grid-column: 5/6;
   }
+
+  .projects picture
+  {
+    grid-row: 2/5;
+  }
 }
 
 
