@@ -17,8 +17,6 @@
   padding: 1rem;
 }
 
-
-
 .block h2
 {
   margin: 0.5rem;
@@ -83,6 +81,31 @@ footer
   text-align: center;
 }
 
+.header
+{
+  text-align: center;
+}
+
+#headerName
+{
+    grid-column: 1/6;
+}
+
+#headerText
+{
+  grid-column: 1/6;
+}
+
+#headerLeftImg
+{
+  grid-column: 2/3;
+}
+
+#headerRightImg
+{
+  grid-column: 4/5;
+}
+
 
 /*Media Queries*/
 @media (min-width: 769px)
@@ -131,6 +154,30 @@ footer
   .projects picture
   {
     grid-row: 2/5;
+  }
+
+  #headerName
+  {
+    grid-column: 2/5;
+    grid-row: 1/2;
+  }
+
+  #headerText
+  {
+    grid-column: 2/5;
+    grid-row: 2/3;
+  }
+
+  #headerLeftImg
+  {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  #headerRightImg
+  {
+    grid-column: 5/6;
+    grid-row: 1/3;
   }
 }
 
