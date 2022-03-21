@@ -26,8 +26,5 @@ function check(element)
 }
 
 check();
-document.addEventListener('scroll', check);
-document.addEventListener('resize', check);
-
-
-console.log(document.getElementById("test").getBoundingClientRect());
+document.addEventListener("scroll", check);
+document.addEventListener("resize", check);
