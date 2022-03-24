@@ -28,3 +28,20 @@ function check(element)
 check();
 document.addEventListener("scroll", check);
 document.addEventListener("resize", check);
+
+
+item = document.getElementById("copyThis");
+item.addEventListener("click", copy)
+function copy()
+{
+    if(navigator.clipboard)
+    {
+        item = document.getElementById("copyThis");
+        navigator.clipboard.writeText(item.innerText.trim()).then(() =>
+        {
+            item.innerHTML = "Email Copied!";
+            setTimeout(() => {item.innerHTML = "ld2425@nyu.edu";},1000)
+
+        });
+    }
+}

@@ -21,15 +21,20 @@
   100%{transform: translateX(0%);}
 }
 
+a
+{
+  color: mediumturquoise;
+}
+
 a:link, a:visited
 {
-  color: black;
+  color: mediumturquoise;
   text-decoration: none;
 }
 
 a:hover, a:active
 {
-  color: lightskyblue;
+  color: darkorange;
   text-decoration: none;
 }
 
