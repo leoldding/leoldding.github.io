@@ -7,7 +7,7 @@ function isInViewport(element) {
     );
 }
 
-function check(element)
+function viewportCheck(element)
 {
   fadeBlocks = document.querySelectorAll(".block");
   fadeTitles = document.querySelectorAll(".title");
@@ -25,22 +25,22 @@ function check(element)
   });
 }
 
-check();
-document.addEventListener("scroll", check);
-document.addEventListener("resize", check);
+viewportCheck();
+document.addEventListener("scroll", viewportCheck);
+document.addEventListener("resize", viewportCheck);
 
 
-item = document.getElementById("copyThis");
-item.addEventListener("click", copy)
+itemCopy = document.getElementById("copyThis");
+itemCopy.addEventListener("click", copy);
 function copy()
 {
     if(navigator.clipboard)
     {
-        item = document.getElementById("copyThis");
-        navigator.clipboard.writeText(item.innerText.trim()).then(() =>
+        itemCopy = document.getElementById("copyThis");
+        navigator.clipboard.writeText(itemCopy.innerText.trim()).then(() =>
         {
-            item.innerHTML = "Email Copied!";
-            setTimeout(() => {item.innerHTML = "ld2425@nyu.edu";},1000)
+            itemCopy.innerHTML = "Email Copied!";
+            setTimeout(() => {itemCopy.innerHTML = "ld2425@nyu.edu";},1000)
 
         });
     }
