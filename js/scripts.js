@@ -37,10 +37,10 @@ function copy()
     if(navigator.clipboard)
     {
         itemCopy = document.getElementById("copyThis");
-        navigator.clipboard.writeText(itemCopy.innerText.trim()).then(() =>
+        navigator.clipboard.writeText("ld2425@nyu.edu").then(() =>
         {
             itemCopy.innerHTML = "Email Copied!";
-            setTimeout(() => {itemCopy.innerHTML = "ld2425@nyu.edu";},1000)
+            setTimeout(() => {itemCopy.innerHTML = "Email Me: ld2425@nyu.edu";},1000)
 
         });
     }
